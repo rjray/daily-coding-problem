@@ -10,7 +10,7 @@ public class p1_1 {
     /*
         Simple solution, using division
      */
-    public static long[] arrayProdsSimple(long[] list) {
+    private static long[] arrayProdsSimple(long[] list) {
         long[] prods = new long[list.length];
         long allProd = 1;
 
@@ -28,7 +28,7 @@ public class p1_1 {
     /*
         Non-division solution.
      */
-    public static long[] arrayProds(long[] list) {
+    private static long[] arrayProds(long[] list) {
         long[] prods = new long[list.length];
         long[] forward = new long[list.length];
         long[] backward = new long[list.length];
@@ -59,7 +59,7 @@ public class p1_1 {
         return prods;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         long[] list;
 
         if (args.length > 0) {
@@ -68,8 +68,7 @@ public class p1_1 {
                 list[i] = Long.parseLong(args[i]);
             }
         } else {
-            long[] tmp = {1L, 2L, 3L, 4L, 5L};
-            list = tmp;
+            list = new long[]{1L, 2L, 3L, 4L, 5L};
         }
 
         System.out.println(Arrays.toString(arrayProdsSimple(list)));
