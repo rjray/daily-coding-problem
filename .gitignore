@@ -1,1 +1,4 @@
 *.class
+.DS_Store
+java/.idea
+java/daily-coding-problem.iml
