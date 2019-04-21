@@ -1,8 +1,11 @@
 #!/usr/bin/perl
 
+# Page 20, problem 1.1.
+
 use strict;
 use warnings;
 
+# Simple solution using division
 sub array_prods_simple {
     my @array = @_;
 
@@ -14,6 +17,7 @@ sub array_prods_simple {
     return (map { $full / $_ } @array);
 }
 
+# Solution without division
 sub array_prods {
     my @array = @_;
     my $last  = $#array;

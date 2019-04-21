@@ -1,8 +1,15 @@
+/*
+    Page 20, problem 1.1.
+ */
+
 import java.util.Arrays;
 
 public class p1_1 {
     public p1_1() {}
 
+    /*
+        Simple solution, using division
+     */
     public static long[] arrayProdsSimple(long[] list) {
         long[] prods = new long[list.length];
         long allProd = 1;
@@ -18,6 +25,9 @@ public class p1_1 {
         return prods;
     }
 
+    /*
+        Non-division solution.
+     */
     public static long[] arrayProds(long[] list) {
         long[] prods = new long[list.length];
         long[] forward = new long[list.length];
