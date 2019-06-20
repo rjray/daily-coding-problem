@@ -5,8 +5,6 @@
 import java.util.Arrays;
 
 public class p1_2 {
-    public p1_2() {}
-
     private static int[] find_bounds(int[] arr) {
         int left = arr.length, right = 0;
         int max_seen = Integer.MIN_VALUE, min_seen = Integer.MAX_VALUE;

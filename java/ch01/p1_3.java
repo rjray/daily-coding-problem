@@ -2,11 +2,7 @@
     Page 24, problem 1.3.
  */
 
-import java.util.Arrays;
-
 public class p1_3 {
-    public p1_3() {}
-
     private static int max_subarray_sum(int[] arr) {
         int max_ending_here = 0, max_so_far = 0;
 
